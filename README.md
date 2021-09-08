@@ -62,6 +62,8 @@ This can be used for deployment automation. See [examples](./example) for a Noma
 Environment Variables |  Default       | Description
 ----------------------| ---------------| -------------------------------------------------
 ANNOUNCE_ADDR         |                | IP:Port of Redis to be announced, by default service will be registered wi
+CONSUL_HTTP_ADDR      |                | Consul address
+CONSUL_HTTP_TOKEN     |                | Consul ACL token
 CONSUL_SERVICE_NAME   |                | Consul service name for tag based service discovery
 CONSUL_SERVICE_PREFIX | redis          | Name Prefix, will be followed by "-(master/slave)", ignored if CONSUL_SERVICE_NAME is used
 CONSUL_LOCK_KEY       | resec/.lock    | KV lock location, should be overriden if multiple instances running in the same consul DC
